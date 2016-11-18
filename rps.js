@@ -19,7 +19,8 @@ function game() {
     var human = prompt("Choose rock, paper, or scissor.")
 
     if (computer === human) {
-        alert("Looks like a tie")
+        alert("Looks like a tie");
+        report(human, computer, "It's a TIE");
     } else if ((computer === "rock" && human === "paper") || (computer === "paper" && human === "scissor") || (computer === "scissor" && human === "rock")) {
         return report(human, computer, "Man"); // human wins
     } else {
