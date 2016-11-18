@@ -24,6 +24,9 @@ function game() {
     } else if ((computer === "rock" && human === "paper") || (computer === "paper" && human === "scissor") || (computer === "scissor" && human === "rock")) {
         return report(human, computer, "Man"); // human wins
     } else {
+        if (human !== "rock" || human !== "rock" || human !== "rock") {
+          return report(human, computer, "Machine wins by default");
+        }
         return report(human, computer, "Machine"); //computer wins;
     }
 }
